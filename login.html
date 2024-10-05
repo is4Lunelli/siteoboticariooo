@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/logado.css">
+  </head>
+  <body>
+    <div class="image-container">
+      <div class="image" style="background-image: url('./assets/img/Sem\ nome\ \(Apresentação\).png');"></div>
+      <div class="image" style="background-image: url('./assets/img/Sem\ nome\ \(Apresentação\)2.jpg');"></div>
+      <div class="image" style="background-image: url('./assets/img/Sem\ nome\ \(Apresentação\)3.jpg');"></div>
+      <div class="image" style="background-image: url('./assets/img/Sem\ nome\ \(Apresentação\)4.jpg');"></div>
+      <div class="image" style="background-image: url('./assets/img/Sem\ nome\ \(Apresentação\)5.jpg');"></div>
+      <div class="image" style="background-image: url('./assets/img/Sem\ nome\ \(Apresentação\)6.jpg');"></div>
+      <div class="image" style="background-image: url('./assets/img/Sem\ nome\ \(Apresentação\)7.jpg');"></div>
+    </div>
+    <nav>
+      <div class="gradiente">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Produtos Registrados</a></li>
+        <li><a href="#">Histórico</a></li>
+      </ul>
+      </div>
+    </nav>
+
+    <div class="content">
+    <header>
+      <h1 id="logado"></h1>
+      <button onclick="sair()">Sair</button>
+    </header>
+
+
+
+<section class="form-container">
+    <div class="container">
+      <form action="">
+        <h2>
+          Insira o código do produto:
+        </h2>
+        <input type="text" name="" id="name-box" class="input">
+        <h2>
+          <label for="diaa">Informe a data de hoje:</label>
+          </h2>
+          <input type="date" id="diaa" name="diaa" />
+      </form>
+    </div>
+    <div class="texto-inferior">
+      <h3><p>1º Passo:</p></h3>
+    </div>
+
+
+    <div class="container">
+      <form action="">
+        <h2>Selecione o estado do granel:</h2>
+        <select id="estadoGranel" name="plataforma" required="required">
+          <option value="">Escolha uma opção</option>
+          <option value="aprovado">Aprovado</option>
+          <option value="reprovado">Reprovado</option>
+        </select>
+        <fieldset>
+          <legend>REVISÃO DA EPA:</legend>
+          <div>
+            <input type="checkbox" id="scales" name="scales" checked />
+            <label for="scales">Feita</label>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div class="texto-inferior">
+      <h3><p>2º Passo:</p></h3>
+    </div>
+
+
+    <div class="container">
+      <form action="">
+        <h2>CHECAGEM DOCS</h2>
+        <fieldset>
+          <div class="check">
+          <legend>VERIFIQUE:</legend>
+          <div>
+            <input type="checkbox" id="etiqueta" name="etiqueta" checked />
+            <label for="scales">Etiqueta e folha de lote</label>
+          </div>
+          <div>
+            <input type="checkbox" id="granel" name="granel" checked />
+            <label for="scales">Tipo de granel</label>
+          </div>
+          <div>
+            <input type="checkbox" id="lote" name="lote" checked />
+            <label for="scales">Lote</label>
+          </div>
+          <div>
+            <input type="checkbox" id="validade" name="validade" checked />
+            <label for="scales">Validade</label>
+          </div>
+          </div>
+        </fieldset>
+
+
+</section>
+
+</div>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/login.js"></script>
+  </body>
+</html>
+A

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,522;1,522&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: column; /* Empilha as divs em uma coluna */
+    height: 100%; /* Ocupa 100% da altura da página */
+  }
+  
+  .image {
+    width: 100%;             /* Cada imagem ocupa 100% da largura */
+    height: auto;           /* A altura se ajusta automaticamente */
+    aspect-ratio: 16/9;    /* Define a proporção desejada, ajuste conforme necessário */
+    background-size: contain; /* Ajusta a imagem para caber no espaço, mantendo a proporção */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-position: center; /* Centraliza a imagem */
+  }
+
+  .content {
+    position: absolute; /* Para colocar o conteúdo em cima da imagem */
+    top: 0; /* Alinha ao topo do contêiner */
+    left: 0; /* Alinha à esquerda do contêiner */
+    width: 100%; /* Largura total */
+    z-index: 0; /* Garante que o conteúdo fique acima das imagens */
+    color: rgb(0, 0, 0); /* Cor do texto, para melhor contraste */
+    padding: 20px; /* Espaçamento do conteúdo */
+    text-align: center; /* Centraliza o texto */
+  }
+
+h1{
+    margin-top: 5%;
+    padding: 1%;
+    font-size: 7rem;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+}
+
+header{
+    display: flex;              /* Define o container como flex */
+    flex-direction: column;      /* Coloca os elementos em uma coluna (um abaixo do outro) */
+    align-items: center;         /* Centraliza os itens horizontalmente */
+    justify-content: center;     /* Centraliza os itens verticalmente */
+    margin-top: 5%;
+}
+  
+  /* Estilização do botão */
+  button {
+    background-color: #29b62d; /* Cor de fundo verde */
+    color: white;              /* Cor do texto */
+    padding: 1.5% 3%;        /* Espaçamento interno do botão */
+    font-size: 16px;           /* Tamanho da fonte */
+    border: none;              /* Remove a borda */
+    border-radius: 5px;        /* Bordas arredondadas */
+    cursor: pointer;           /* Cursor do mouse em forma de mão */
+    right: 20px;               /* Distância do lado direito da página */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar um efeito 3D */
+  }
+  
+  /* Estilo do botão ao passar o mouse */
+  button:hover {
+    background-color: #49ad4e; /* Muda a cor de fundo ao passar o mouse */
+  }
+
+  ul {
+    font-family: Arial, sans-serif;
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 1%;
+    margin: 0;
+    display: flex; /* Coloca os itens da lista lado a lado */
+    justify-content: space-between;
+    font: bold;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.gradiente {
+    background: linear-gradient(90deg, rgb(109, 143, 114) 0%, rgb(236, 230, 214));
+}
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+  /* Estilos para os links de navegação */
+  ul li {
+    margin: 0 15px; /* Espaçamento entre os itens da lista */
+  }
+  
+  ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #000000;           /* Cor do texto */
+    font-size: 140%;       /* Tamanho da fonte */
+    padding: 10px 15px;    /* Espaçamento interno dos links */
+    transition: color 0.3s ease; /* Transição suave para o hover */
+  }
+  
+  ul li a:hover {
+    color: #ffffff; /* Muda a cor do texto quando o mouse passa sobre o link */
+  }
+
+nav{
+    background-color: #c2d6bd;
+}
+
+.container{
+    max-width: 500px;   
+    width: 100%;        
+    padding: 40px;      
+    background-color: #dbebdb; 
+    border-radius: 5%;  
+    margin: 0 auto; /* Centraliza o contêiner na página */
+    margin-top: 10%; /* Espaçamento acima do contêiner */
+}
+
+form{
+    background-color: #dbebdb;
+    max-width: 500px;
+    height: 450px;
+    border-radius: 5%;
+    display: flex;             /* Ativa o flexbox */
+    flex-direction: column;    /* Organiza os elementos em coluna */
+    align-items: center;       /* Centraliza os elementos horizontalmente */
+    justify-content: center;
+}
+
+.form-container {
+    position: relative; /* O pai deve ser posicionado */
+    height: 100vh;     /* Ajusta a altura para 100% da viewport */
+    padding-bottom: 50px; /* Espaço extra na parte inferior */
+}
+
+form h2{
+    text-align: center;
+    font-size: 200%;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+input[type="text"], 
+input[type="date"] {
+    padding: 10px;                 
+    border: 1px solid #ccc;       
+    border-radius: 5px;           
+    font-size: 16px;               
+    width: 100%;                  
+    max-width: 250px;             
+    margin-top: 10px;            
+    transition: border-color 0.3s; 
+}
+
+input[type="date"]:focus, 
+input[type="text"]:focus {
+    border-color: #29b62d; /* Muda a cor da borda quando focado */
+    outline: none;         /* Remove a borda padrão do foco */
+}
+
+.texto-inferior {
+    display: flex;               
+    justify-content: center;     
+    text-align: center;          
+}
+
+.texto-inferior p {
+    font-size: 4rem;
+    margin-bottom: -5%;           
+    color: #333;    
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Estilos básicos para o select */
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  /* Cores neutras (padrão) */
+  select {
+    background-color: #ffffff; /* Branco por padrão */
+    border: 1px solid #ccc;
+  }
+  
+  /* Verde para aprovado */
+  select.aprovado {
+    background-color: #8ed69f; /* Verde claro */
+    border-color: #188832;
+  }
+  
+  /* Vermelho para reprovado */
+  select.reprovado {
+    background-color: #f8d7da; /* Vermelho claro */
+    border-color: #960716;
+  }
+
+fieldset{
+    margin-top: 15%;
+    font-size: 1.8rem;
+}
+
+.check {
+    text-align: left;       /* Alinha o texto à esquerda */
+}
+  
