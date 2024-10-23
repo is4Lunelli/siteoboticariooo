@@ -4,6 +4,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    overflow-x: hidden;
   }
   
   .image-container {
@@ -11,6 +12,17 @@ body {
     flex-direction: column; /* Empilha as divs em uma coluna */
     height: 100%; /* Ocupa 100% da altura da página */
   }
+
+.sair{
+  margin-bottom: 5rem;
+  margin-top: -5rem;
+  padding: 1rem 2rem;       /* Aumenta o espaço interno */
+  font-size: 1.5rem;        /* Aumenta o tamanho da fonte */
+  border-radius: 8px;       /* Bordas arredondadas */
+  background-color: #29b62d; /* Cor de fundo */
+  color: white;             /* Cor do texto */
+  cursor: pointer;          /* Cursor em forma de mão */
+}
   
   .image {
     width: 100%;             /* Cada imagem ocupa 100% da largura */
@@ -56,12 +68,21 @@ header{
     background-color: #29b62d; /* Cor de fundo verde */
     color: white;              /* Cor do texto */
     padding: 1.5% 3%;        /* Espaçamento interno do botão */
-    font-size: 16px;           /* Tamanho da fonte */
     border: none;              /* Remove a borda */
     border-radius: 5px;        /* Bordas arredondadas */
     cursor: pointer;           /* Cursor do mouse em forma de mão */
     right: 20px;               /* Distância do lado direito da página */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar um efeito 3D */
+  }
+
+  .enviar{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .revisar{
+    font-size: 1.5rem;
+    margin-top: 1rem;
   }
   
   /* Estilo do botão ao passar o mouse */
@@ -128,15 +149,16 @@ nav{
     width: 100%;        
     padding: 40px;      
     background-color: #dbebdb; 
-    border-radius: 5%;  
-    margin: 0 auto; /* Centraliza o contêiner na página */
+    border-radius: 1em;  
     margin-top: 10%; /* Espaçamento acima do contêiner */
+    margin: 10px auto;
+    position: relative;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.2); /* Sombra leve em todas as direções */
 }
 
 form{
     background-color: #dbebdb;
     max-width: 500px;
-    height: 450px;
     border-radius: 5%;
     display: flex;             /* Ativa o flexbox */
     flex-direction: column;    /* Organiza os elementos em coluna */
@@ -148,6 +170,7 @@ form{
     position: relative; /* O pai deve ser posicionado */
     height: 100vh;     /* Ajusta a altura para 100% da viewport */
     padding-bottom: 50px; /* Espaço extra na parte inferior */
+    z-index: 2;
 }
 
 form h2{
@@ -185,7 +208,7 @@ input[type="text"]:focus {
 
 .texto-inferior p {
     font-size: 4rem;
-    margin-bottom: -5%;           
+    margin-bottom: -5%;
     color: #333;    
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
@@ -229,4 +252,17 @@ fieldset{
 .check {
     text-align: left;       /* Alinha o texto à esquerda */
 }
-  
+
+/*COISAS DE CHECAGEM LINHA DE FORA*/
+fieldset.checagem {
+  border: 1px solid #ccc; /* Ajuste a cor da borda se necessário */
+  margin: 0; /* Remove a margem externa */
+  padding: 0; /* Remove o padding interno */
+  border-radius: 5px; /* Arredonda as bordas, se desejado */
+  margin-top: 5px;
+}
+
+fieldset.checagem h5 {
+  margin: 0; /* Remove a margem do título */
+  padding: 10px; /* Ajuste o padding conforme necessário */
+}
