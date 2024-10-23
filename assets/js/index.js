@@ -13,3 +13,20 @@ function sair() {
   localStorage.removeItem("userLogado");
   window.location.href = "./assets/html/signin.html";
 }
+
+window.onload = function() {
+  const checkboxes = document.querySelectorAll('input[type="checkbox"], input[type="radio"]');
+  checkboxes.forEach(checkbox => {
+    checkbox.checked = false;
+  });
+}
+
+function buttonrevisar() {
+  const formContainer = document.querySelector('.form-container');
+  const offsetTop = formContainer.getBoundingClientRect().top + window.pageYOffset; // Posição do contêiner em relação ao topo da página
+
+  window.scrollTo({
+    top: offsetTop,
+    behavior: 'smooth'
+  });
+}
