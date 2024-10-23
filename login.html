@@ -30,7 +30,7 @@
     <div class="content">
     <header>
       <h1 id="logado"></h1>
-      <button onclick="sair()">Sair</button>
+      <button class="sair" onclick="sair()">Sair</button>
     </header>
 
 
@@ -48,10 +48,11 @@
           <input type="date" id="diaa" name="diaa" />
       </form>
     </div>
+
+
     <div class="texto-inferior">
       <h3><p>1º Passo:</p></h3>
     </div>
-
 
     <div class="container">
       <form action="">
@@ -68,12 +69,18 @@
             <label for="scales">Feita</label>
           </div>
         </fieldset>
+        <h3>Descreva suas características:</h3>
+        <input type="text" name="" id="name-box" class="input">
+        <div class="button1">
+          <button class="enviar" onclick="buttonenviar()">Enviar</button>
+        </div>
       </form>
     </div>
+
+
     <div class="texto-inferior">
       <h3><p>2º Passo:</p></h3>
     </div>
-
 
     <div class="container">
       <form action="">
@@ -99,13 +106,129 @@
           </div>
           </div>
         </fieldset>
+        <h3>Digite a etiqueta e folha de lote:</h3>
+        <input type="text" name="etiquetaefolhadelote" id="name-box" class="input">
 
+        <h3>Digite o tipo de granel:</h3>
+        <input type="text" name="etiquetaefolhadelote" id="name-box" class="input">
+
+
+        <h3>Digite o lote do produto:</h3>
+        <input type="text" name="etiquetaefolhadelote" id="name-box" class="input">
+
+      
+        <h3>Digite a validade do produto:</h3>
+        <input type="date" id="diaa" name="diaa" />
+        <div class="button1">
+          <button class="enviar" onclick="buttonenviar()">Enviar</button>
+        </div>
+      </div>
+
+      <div class="texto-inferior">
+        <h3><p>3º Passo:</p></h3>
+      </div>
+  
+      <div class="container">
+        <form action="">
+          <h2>GERAR ETIQUETA:</h2>
+          <button class="etiqueta" onclick="buttongerar()">BAIXAR</button>
+        </form>
+        <h2>IMPRIMIR ETIQUETA</h2>
+        <button class="etiqueta" onclick="buttonimprimir()">IMPRIMIR</button>
+      </div>
+
+
+      <div class="texto-inferior">
+        <h3><p>4º Passo:</p></h3>
+      </div>
+
+      <div class="container">
+      <form action="">
+        <h2>CHECAGEM FÍSICA AUTOMÁTICA</h2>
+        <fieldset class="checagem">
+          <h5>
+            Emb. primária
+          </h5>
+        </fieldset>
+        <fieldset class="checagem">
+          <h5>
+            Emb. secundária
+          </h5>
+        </fieldset>
+        <fieldset class="checagem">
+          <h5>
+            Cód. de barras
+          </h5>
+        </fieldset>
+        <fieldset class="checagem">
+          <h5>
+            Nº do processo
+          </h5>
+        </fieldset>
+        <fieldset class="checagem">
+          <h5>
+            Validade
+          </h5>
+        </fieldset>
+        <fieldset class="checagem">
+          <h5>
+            Fabricação
+          </h5>
+        </fieldset>
+        <fieldset class="checagem">
+          <h5>
+            Pa/o
+          </h5>
+        </fieldset>
+      </form>
+      </div>
+
+      <div class="texto-inferior">
+        <h3><p>5º Passo:</p></h3>
+      </div>
+
+      <div class="container">
+        <form action="">
+          <h2>CHECAGEM FÍSICO-QUÍMICO</h2>
+          <fieldset>
+            <div class="check">
+            <legend>VERIFIQUE:</legend>
+            <div>
+              <input type="checkbox" id="cor" name="cor" checked />
+              <label for="scales">COR</label>
+            </div>
+            <div>
+              <input type="checkbox" id="odor" name="odor" checked />
+              <label for="scales">ODOR</label>
+            </div>
+            <div>
+              <input type="checkbox" id="aspecto" name="aspecto" checked />
+              <label for="scales">ASPECTO</label>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+
+
+      <section class="form-container" id="form-container">
+      <div class="texto-inferior">
+        <h3><p>FINALIZAÇÃO:</p></h3>
+      </div>
+
+        <div class="container">
+          <form action="">
+            <h2>
+              START PRONTO PARA O ENVIO?
+            </h2>
+            <button class="enviar" onclick="buttonenviar()">Enviar</button>
+            <button class="revisar" onclick="buttonrevisar()">Revisar</button>
+          </form>
+        </div>
 
 </section>
-
 </div>
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/login.js"></script>
   </body>
 </html>
-A
