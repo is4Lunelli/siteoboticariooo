@@ -9,39 +9,39 @@ body {
   
   .image-container {
     display: flex;
-    flex-direction: column; /* Empilha as divs em uma coluna */
-    height: 100%; /* Ocupa 100% da altura da página */
+    flex-direction: column; 
+    height: 100%; 
   }
 
 .sair{
   margin-bottom: 5rem;
   margin-top: -5rem;
-  padding: 1rem 2rem;       /* Aumenta o espaço interno */
-  font-size: 1.5rem;        /* Aumenta o tamanho da fonte */
-  border-radius: 8px;       /* Bordas arredondadas */
-  background-color: #29b62d; /* Cor de fundo */
-  color: white;             /* Cor do texto */
-  cursor: pointer;          /* Cursor em forma de mão */
+  padding: 1rem 2rem;    
+  font-size: 1.5rem;     
+  border-radius: 8px;  
+  background-color: #29b62d; 
+  color: white;           
+  cursor: pointer;        
 }
   
   .image {
-    width: 100%;             /* Cada imagem ocupa 100% da largura */
-    height: auto;           /* A altura se ajusta automaticamente */
-    aspect-ratio: 16/9;    /* Define a proporção desejada, ajuste conforme necessário */
-    background-size: contain; /* Ajusta a imagem para caber no espaço, mantendo a proporção */
-    background-repeat: no-repeat; /* Não repete a imagem */
-    background-position: center; /* Centraliza a imagem */
+    width: 100%;          
+    height: auto;          
+    aspect-ratio: 16/9;    
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
   }
 
   .content {
-    position: absolute; /* Para colocar o conteúdo em cima da imagem */
-    top: 0; /* Alinha ao topo do contêiner */
-    left: 0; /* Alinha à esquerda do contêiner */
-    width: 100%; /* Largura total */
-    z-index: 0; /* Garante que o conteúdo fique acima das imagens */
-    color: rgb(0, 0, 0); /* Cor do texto, para melhor contraste */
-    padding: 20px; /* Espaçamento do conteúdo */
-    text-align: center; /* Centraliza o texto */
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 0; 
+    color: rgb(0, 0, 0); 
+    padding: 20px; 
+    text-align: center; 
   }
 
 h1{
@@ -56,23 +56,23 @@ h1{
 }
 
 header{
-    display: flex;              /* Define o container como flex */
-    flex-direction: column;      /* Coloca os elementos em uma coluna (um abaixo do outro) */
-    align-items: center;         /* Centraliza os itens horizontalmente */
-    justify-content: center;     /* Centraliza os itens verticalmente */
+    display: flex;             
+    flex-direction: column;      
+    align-items: center;      
+    justify-content: center;     
     margin-top: 5%;
 }
   
   /* Estilização do botão */
   button {
-    background-color: #29b62d; /* Cor de fundo verde */
-    color: white;              /* Cor do texto */
-    padding: 1.5% 3%;        /* Espaçamento interno do botão */
-    border: none;              /* Remove a borda */
-    border-radius: 5px;        /* Bordas arredondadas */
-    cursor: pointer;           /* Cursor do mouse em forma de mão */
-    right: 20px;               /* Distância do lado direito da página */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar um efeito 3D */
+    background-color: #29b62d;
+    color: white;              
+    padding: 1.5% 3%;       
+    border: none;             
+    border-radius: 5px;        
+    cursor: pointer;          
+    right: 20px;              
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .enviar{
@@ -87,15 +87,15 @@ header{
   
   /* Estilo do botão ao passar o mouse */
   button:hover {
-    background-color: #49ad4e; /* Muda a cor de fundo ao passar o mouse */
+    background-color: #49ad4e; 
   }
 
   ul {
     font-family: Arial, sans-serif;
-    list-style-type: none; /* Remove os marcadores de lista */
+    list-style-type: none; 
     padding: 1%;
     margin: 0;
-    display: flex; /* Coloca os itens da lista lado a lado */
+    display: flex; 
     justify-content: space-between;
     font: bold;
   }
@@ -125,19 +125,19 @@ header{
   
   /* Estilos para os links de navegação */
   ul li {
-    margin: 0 15px; /* Espaçamento entre os itens da lista */
+    margin: 0 15px; 
   }
   
   ul li a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #000000;           /* Cor do texto */
-    font-size: 140%;       /* Tamanho da fonte */
-    padding: 10px 15px;    /* Espaçamento interno dos links */
-    transition: color 0.3s ease; /* Transição suave para o hover */
+    text-decoration: none; 
+    color: #000000;           
+    font-size: 140%;       
+    padding: 10px 15px;    
+    transition: color 0.3s ease;
   }
   
   ul li a:hover {
-    color: #ffffff; /* Muda a cor do texto quando o mouse passa sobre o link */
+    color: #ffffff; 
   }
 
 nav{
@@ -150,26 +150,26 @@ nav{
     padding: 40px;      
     background-color: #dbebdb; 
     border-radius: 1em;  
-    margin-top: 10%; /* Espaçamento acima do contêiner */
+    margin-top: 10%; 
     margin: 10px auto;
     position: relative;
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.2); /* Sombra leve em todas as direções */
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.2); 
 }
 
 form{
     background-color: #dbebdb;
     max-width: 500px;
     border-radius: 5%;
-    display: flex;             /* Ativa o flexbox */
-    flex-direction: column;    /* Organiza os elementos em coluna */
-    align-items: center;       /* Centraliza os elementos horizontalmente */
+    display: flex;           
+    flex-direction: column;    
+    align-items: center;      
     justify-content: center;
 }
 
 .form-container {
-    position: relative; /* O pai deve ser posicionado */
-    height: 100vh;     /* Ajusta a altura para 100% da viewport */
-    padding-bottom: 50px; /* Espaço extra na parte inferior */
+    position: relative; 
+    height: 100vh;     
+    padding-bottom: 50px; 
     z-index: 2;
 }
 
@@ -196,8 +196,8 @@ input[type="date"] {
 
 input[type="date"]:focus, 
 input[type="text"]:focus {
-    border-color: #29b62d; /* Muda a cor da borda quando focado */
-    outline: none;         /* Remove a borda padrão do foco */
+    border-color: #29b62d; 
+    outline: none;         
 }
 
 .texto-inferior {
@@ -228,19 +228,19 @@ select {
   
   /* Cores neutras (padrão) */
   select {
-    background-color: #ffffff; /* Branco por padrão */
+    background-color: #ffffff; 
     border: 1px solid #ccc;
   }
   
   /* Verde para aprovado */
   select.aprovado {
-    background-color: #8ed69f; /* Verde claro */
+    background-color: #8ed69f; 
     border-color: #188832;
   }
   
   /* Vermelho para reprovado */
   select.reprovado {
-    background-color: #f8d7da; /* Vermelho claro */
+    background-color: #f8d7da;
     border-color: #960716;
   }
 
@@ -250,19 +250,19 @@ fieldset{
 }
 
 .check {
-    text-align: left;       /* Alinha o texto à esquerda */
+    text-align: left;      
 }
 
 /*COISAS DE CHECAGEM LINHA DE FORA*/
 fieldset.checagem {
-  border: 1px solid #ccc; /* Ajuste a cor da borda se necessário */
-  margin: 0; /* Remove a margem externa */
-  padding: 0; /* Remove o padding interno */
-  border-radius: 5px; /* Arredonda as bordas, se desejado */
+  border: 1px solid #ccc; 
+  margin: 0; 
+  padding: 0; 
+  border-radius: 5px; 
   margin-top: 5px;
 }
 
 fieldset.checagem h5 {
-  margin: 0; /* Remove a margem do título */
-  padding: 10px; /* Ajuste o padding conforme necessário */
+  margin: 0; 
+  padding: 10px; 
 }
